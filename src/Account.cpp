@@ -45,7 +45,7 @@ string Account::getNote() const
 
 bool Account::isDefault() const
 {
-	return isDefault;
+	return defAcc;
 }
 
 Account::~Account()

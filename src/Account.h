@@ -14,7 +14,7 @@ private:
 	string name;
 	Currency* currency;
 	string note;
-	bool isDefault;
+	bool defAcc;
 public:
 	Account(string aName, Currency* cur);
 	~Account();

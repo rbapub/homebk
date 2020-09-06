@@ -139,27 +139,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AccItem.h" />
-    <ClInclude Include="Account.h" />
-    <ClInclude Include="Currency.h" />
-    <ClInclude Include="ICatalogElement.h" />
-    <ClInclude Include="Date.h" />
-    <ClInclude Include="Partner.h" />
-    <ClInclude Include="resource.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="homebk.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AccItem.cpp" />
-    <ClCompile Include="Account.cpp" />
-    <ClCompile Include="Currency.cpp" />
-    <ClCompile Include="Date.cpp" />
-    <ClCompile Include="homebk.cpp" />
-    <ClCompile Include="Partner.cpp" />
+    <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="readme.txt" />
+    <ClCompile Include="src\AccItem.cpp" />
+    <ClCompile Include="src\Account.cpp" />
+    <ClCompile Include="src\Currency.cpp" />
+    <ClCompile Include="src\Date.cpp" />
+    <ClCompile Include="src\homebk.cpp" />
+    <ClCompile Include="src\Partner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\AccItem.h" />
+    <ClInclude Include="src\Account.h" />
+    <ClInclude Include="src\Currency.h" />
+    <ClInclude Include="src\Date.h" />
+    <ClInclude Include="src\ICatalogElement.h" />
+    <ClInclude Include="src\Partner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
