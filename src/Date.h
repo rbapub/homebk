@@ -7,14 +7,14 @@ class Date
 {
 	friend ostream &operator<<(ostream &, const Date &);
 	public:
-		Date(int y=1900, int m=1, int d=1, int h=0, int min=0, int sec=0); //конструктор по умолчанию
+		Date(int y=1900, int m=1, int d=1, int h=0, int min=0, int sec=0); // default ctor
 		Date(tm *ti);
-		void setDate(int, int, int, int, int, int); //установить дату
-		Date &operator++(); //операция префиксного инкремента
-		Date operator++(int); //операция постфиксного инкремента
-		const Date &operator+=(int); //прибавить дни к дате
-		bool leapYear(int) const; //проверка на високосный год
-		bool endOfMonth(int) const; //проверка на последний день месяца
+		void setDate(int, int, int, int, int, int);
+		Date &operator++();
+		Date operator++(int);
+		const Date &operator+=(int); // add days to date
+		bool leapYear(int) const; // leap year test
+		bool endOfMonth(int) const; // last day of month test
 		int getYear() const;
 		int getMonth() const;
 		int getDay() const;
@@ -28,8 +28,8 @@ class Date
 		int hour;
 		int minute;
 		int second;
-		static const int days[]; //массив дней в месяцах
-		void helpIncrement(); //сервисная функция для инкремента даты
+		static const int days[]; // days in monthes
+		void helpIncrement(); // date's increment service function
 };
 
 #endif
