@@ -16,6 +16,9 @@
 *.layout
 *.vcxproj
 *.vcxproj.filters
+*.o
+*.win
+*.exe
 
 # Build results
 [Dd]ebug/
